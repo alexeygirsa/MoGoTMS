@@ -1,0 +1,17 @@
+{
+  "name": "mogo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.4.1",
+    "sharp": "^0.29.3"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  }
+}

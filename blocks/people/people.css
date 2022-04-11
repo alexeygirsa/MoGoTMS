@@ -1,0 +1,122 @@
+.people {
+    background: url(./stream.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 923px;
+}
+
+.peopleBackground {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    min-height: 923px;
+}
+
+.peopleContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(286px,530px));
+     align-items: center;
+    justify-content: center;
+    column-gap: 51px;
+    row-gap: 42px;
+    margin: 42px 0;
+}
+
+.peopleContainer div {
+    display: flex;
+    gap: 30px;
+}
+
+.peopleContainer div img {
+    height: 130px;
+    width: 130px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.peopleContainer div img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+
+.peopleContainer div div {
+    display: flex;
+    flex-direction: column;
+    color: #2D3033;
+    gap: 0;
+}
+
+.peopleName {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.peoplePro {
+    display: flex;
+    align-items: center;
+    height: 21px;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.peopleDescr {
+    min-height: 150px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.peopleDash {
+    width: 70px;
+    height: 4px;
+    background-color: #F38281;
+    margin: 42px 0;
+}
+
+@media screen and (max-width: 1500px) {
+    .peopleContainer {
+        padding: 0 40px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .peopleContainer{
+        gap: 15px;
+    }
+.peopleContainer div {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 16px;
+    }
+.peopleContainer div div{
+    align-items: center;
+}
+.peopleContainer div div * {
+    justify-content: center;
+}
+
+.peopleDescr {
+    text-align: center;
+}
+.peopleDash {
+    width: 70px;
+    height: 4px;
+    background-color: #F38281;
+    margin: 22px 0;
+}
+.peopleDescr {
+    min-height: 80px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+}

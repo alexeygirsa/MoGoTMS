@@ -1,0 +1,80 @@
+.design {
+    background: url(./mountain.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1510px;
+    height: 868px;
+    margin: 0 auto;
+}
+
+.designBackground {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+
+.designImgStack {
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   margin: 59px auto 57px auto;
+    }
+
+.designImgTop {
+    max-height: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.designImgBottom {
+    max-height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.designImgIphone {
+    height: 411px;
+    width: auto;
+    top: 230px;
+    left: 300px;
+    z-index: 3;
+    position: relative;
+}
+
+@media screen and (max-width: 1020px) {
+    .designImgStack {
+        transform: scale(0.67);
+    }
+    .designImgIphone {
+        top: 180px;
+        left: 270px;
+        transform: scale(0.67);
+    }
+    .design {
+        height: 588px;
+    }
+    .designImgTop {
+        max-height: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .designImgStack {
+        margin:0 20px 50px 20px;
+        transform: scale(0.42);
+    }
+    .designImgIphone {
+        top: 180px;
+        left: 270px;
+        transform: scale(0.62);
+    }
+    .design {
+        height: 450px;
+    }
+    .designImgTop {
+        max-height: 95%;
+    }
+}
