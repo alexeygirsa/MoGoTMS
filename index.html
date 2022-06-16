@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- лучше использовать абсолютные пути: href="/index.css" -->
     <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- непраивльные наименования классов и структура блоков в папке blocks -->
+    <!-- повтори БЭМ методологию -->
     <header class="header">
         <div class="headerMenuContainer">
             <img class="logo" src="./blocks/header/MoGo.svg" alt="logo">
@@ -62,6 +65,7 @@
         </p>
         <div class="galleryContainer">
             <div class="gallery__item">
+                <!-- все картинки лучше вставлять через тэг <picture> с оптимизацией под разные размеры экранов -->
                 <p><img class="galleryImg" src="./blocks/aboutus/citi.png" alt="square"></p>
                 <div class="gallery__overlay">
                     <a class="gallery__actionLink" href="#">
